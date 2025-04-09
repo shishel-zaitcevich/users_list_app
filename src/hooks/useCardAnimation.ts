@@ -1,10 +1,11 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 export const useCardAnimation = (index: number) => {
     const ref = useRef<HTMLAnchorElement>(null); 
 
-  useEffect(() => {
+    useGSAP(() => {
     if (!ref.current) return;
 
     const direction = index % 2 === 0 ? -100 : 100;
