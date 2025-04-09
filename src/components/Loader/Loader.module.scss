@@ -1,0 +1,9 @@
+@use '../../assets/styles/variables.scss' as vars;
+@use 'sass:color';
+
+.loader {
+  text-align: center;
+  padding: vars.$padding;
+  font-size: 18px;
+  color: vars.$primary-color;
+}

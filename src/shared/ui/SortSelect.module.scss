@@ -1,0 +1,16 @@
+@use '../../assets/styles/variables.scss' as vars;
+@use 'sass:color';
+
+.sort {
+  margin-bottom: 16px;
+  padding: 10px;
+
+  select {
+    padding: 12px;
+    border: 1px solid vars.$border-color;
+    border-radius: 8px;
+    background: vars.$white-color;
+    cursor: pointer;
+    width: 200px;
+  }
+}
